@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Survey</title>
+</head>
+
+<body class=" text-center bg-blend-soft-light bg-contain bg-yellow-700" style="background-image: url('https://i.ibb.co/tDGZgC2/bg.jpg')">
+    
+    <div class="p-16 text-white  drop-shadow-xl ">
+        <h1 class="text-6xl font-bold drop-shadow-2xl"  id="title">Music Genres</h1>
+        <p class="font-light text-sm" id="description"> Share your toughts about your music taste!</p>
+    </div> 
+
+    <form action="" class="pt-8  max-w-4xl md:mx-auto my-8 mx-6 p-6 bg-yellow-800 bg-opacity-90 rounded-lg" id="survey-form">
+
+        <!-- INPUTS -->
+        <div class="grid grid-cols-1 text-white">
+            <label class="text-xs pb-2" id="name-label" for="name">Name</label>
+            <input class="rounded pl-2 py-2 text-yellow-800" type="text" id="name" placeholder="Enter your name" required>
+
+            <label class="text-xs pt-2 pb-2" id="email-label" for="email">Email </label>
+            <input  class="rounded pl-2 py-2 text-yellow-800" type="email" id="email" placeholder="Enter your Email" required>
+
+            <label class="text-xs pt-2 pb-2" id="number-label" for="number">Age (optional)</label>
+            <input class="rounded pl-2 py-2 text-yellow-800"  type="number" min = 1   max = 99 id="number" placeholder="Age">
+        </div>
+
+        <!-- DROPDOWN -->
+        <div class="form-group pt-8 text-white">
+            <p class="font-bold pb-2">Which genre of music do you listen to the most??</p>
+            <select id="dropdown" name="role" class="form-control text-gray-500 text-center rounded p-2 hover:text-yellow-900 hover:bg-gray-300" required>
+              <option disabled selected value>Click to choose</option>
+              <option value="2hours" class="">Blues</option>
+              <option value="4hours">Country</option>
+              <option value="6hours">Electronic</option>
+              <option value="6hours">HipHop</option>
+              <option value="6hours">Jazz</option>
+              <option value="6hours">Pop</option>
+              <option value="6hours">Metal</option>
+              <option value="6hours">Punk</option>
+              <option value="6hours">Other</option>
+            </select>
+        </div>
+
+        <!-- SELECTS -->
+        <div class="form-group pt-4 text-white ">
+            <p class="font-bold">How many hours do you listen music on a day average?</p>
+            <label class="text-sm hover:text-yellow-500">
+                <input name="user-recommend" value="2hours" type="radio" class="input-radio " checked /> 0-2 Hours
+            </label>
+            <label class="text-sm hover:text-yellow-500">
+                <input name="user-recommend" value="4hours" type="radio" class="input-radio" /> 2-4 Hours
+            </label>
+            <label class="text-sm hover:text-yellow-500">
+                <input name="user-recommend" value="6hours" type="radio" class="input-radio" /> 4+ Hours
+            </label>
+        </div>
+
+          <!-- CHECKBOXES -->
+        <div class="form-group text-white pt-4">
+            <p class="font-bold">Where do you like to listen music?<span class="clue">(Check all that apply)</span></p>
+            <label class="text-sm hover:text-yellow-500"><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"
+                 /> Disco</label>
+            <label class="text-sm hover:text-yellow-500"><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox " 
+                /> Festival</label>
+            <label class="text-sm hover:text-yellow-500"><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" 
+                /> Car</label>
+            <label class="text-sm hover:text-yellow-500"><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" 
+                /> Home</label>
+            <label class="text-sm hover:text-yellow-500"><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" 
+                /> Alone</label>
+            <label class="text-sm hover:text-yellow-500"><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" 
+                /> With friends</label>
+            <label class="text-sm hover:text-yellow-500"><input name="prefer" value="videos" type="checkbox" class="input-checkbox" 
+                /> Radio</label>
+            <label class="text-sm hover:text-yellow-500"><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" 
+                /> Spotify</label>
+            <label class="text-sm hover:text-yellow-500"><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" 
+                /> Youtube</label>
+        </div>
+        
+        <!-- ADD COMMENT FIELD -->
+        <div class=" grid grid-cols-1 form-group text-white pt-4 font-bold">
+            <p class="pb-2">Tell us a bit about yourself and how are you connected to music?</p>
+            <textarea id="comments" class="input-textarea text-yellow-800 pl-4 pt-1 w-auto rounded" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+          <!-- BUTTON -->
+          <div class=" form-group text-white pt-4">
+            <button type="submit" id="submit" class="submit-button font-bold border-2 p-2 rounded bg-yellow-800 hover:bg-yellow-700 drop-shadow-lg">
+              Submit
+            </button>
+          </div>
+
+    </form>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

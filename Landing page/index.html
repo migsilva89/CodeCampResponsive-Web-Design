@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+
+        /* header {
+        position: fixed;
+        width: 100%;
+        color: white;
+        font-family: 'Exo 2', sans-serif;
+        } */
+
+        @media (max-width: 0px) {
+            header {
+                display:flex;
+            }
+          }
+
+    </style>
+</head>
+
+<body>
+    
+    <!-- NAVBAR -->
+    <header class="fixed w-full" id="header">
+        <nav class="bg-indigo-800" id="nav-bar">
+            <div class="pt-4 pb-4">
+                <div class=" flex justify-around">
+                    <div class="">
+                    <img class="w-22 h-5" src="https://i.postimg.cc/13DV6xYg/Untitled-1.png" id="header-img" alt="logo">
+                </div>
+                    <!-- MENUS  -->
+                    <ul class="flex text-white gap-8">
+                    <li class="">
+                        <a href="#home" class="p-3 hover:text-white nav-link" >Home</a>
+                    </li>
+                    <li class="">
+                        <a href="#vid" class="p-3 hover:text-white nav-link" >Video</a>
+                    </li>
+                    <li class="">
+                        <a href="#cards" class="p-3 hover:text-white nav-link">Services</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+     
+    <!-- FORM -->
+    <h2 class="text-center p-8 pt-28 font-bold text-xl">Add your email and be updated about new sample packs 4FREE!</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <div class="text-center">
+            <input class="text-center border-2 border-indigo-500 p-1 rounded" name="email" id="email" type="email" placeholder="Enter your email address" required />
+        </div>
+        <div class="text-center text-white text-sm p-4 ">
+            <input class="rounded-xl p-2 bg-indigo-600 hover:bg-indigo-500" id="submit" type="submit" value="Get Started" class="btn" />
+        </div>
+    </form>
+     
+    <!-- ICONS AND DESC GRID -->
+    <section id="home">
+        <div class="md:mx-auto max-w-4xl grid grid-cols-1 gap-16 mr-8 text-indigo-700 pt-8 pb-8">
+    
+            <div class="flex">
+                <div class="hidden md:block m-auto"><i class='far fa-file-audio' style='font-size:46px'></i></div> 
+                <div class="pl-8 md:text-left text-center">
+                    <span class="text-black font-bold text-xl">Best Quality</span>
+                    <p class="text-black">Our samples are recorded with the best hardware on the market. This will increase your productions, make them faster and with better quality.</p>
+                </div> 
+            </div>
+
+            <div class="flex">
+                <div class="hidden md:block m-auto"><i class='fas fa-download' style='font-size:36px'></i></div> 
+                <div class="pl-8 md:text-left text-center">
+                    <span class="text-black font-bold text-xl">Free Downloads</span>
+                    <p class="text-black">Our sample packs are 4free. It means that you can use them where you want and how many time you want. They are also with royalty FREE!</p>
+                </div> 
+            </div>
+
+            <div class="flex">
+                <div class="hidden md:block m-auto"><i class='fas fa-redo' style='font-size:36px'></i></div> 
+                <div class="pl-8 md:text-left text-center">
+                    <span class="text-black font-bold text-xl">Weekly Updates</span>
+                    <p class="text-black">Our team works hard to give you the fresh and updated styles every week. Subscribe to be warned everytime we make updates.</p>
+                </div> 
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- VIDEO -->
+    <section class="flex justify-center pt-16" id="vid">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/1ke8vZH51qg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <!-- CARDS -->
+    <section id="cards">
+        <div class=" md:mx-auto max-w-4xl grid md:grid-cols-3 text-center pt-20 pb-16">
+           
+            <div class="p-4">
+                <div class="border-2 rounded-lg">
+                    <div class="bg-indigo-800 font-bold text-white p-4 rounded-t-lg">Monthly Sample Pack</div>
+                    <div class="font-bold text-2xl p-4">FREE</div>
+                    <div class="px-8 pb-2">
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum dolor.
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum dolor.
+                        Lorem ipsum.
+                    </div>
+                    <div class="border-2 m-12 bg-indigo-700 text-white rounded-xl hover:bg-indigo-600">
+                        <div class="m-4"> SELECT </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4">
+                <div class="border-2 rounded-lg">
+                    <div class="bg-indigo-800 font-bold text-white p-4 rounded-t-lg ">Weekly Sample Pack</div>
+                    <div class="font-bold text-2xl p-4">10€</div>
+                    <div class="px-8 pb-2">
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum dolor.
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum dolor.
+                        Lorem ipsum.
+                    </div>
+                    <div class="border-2 m-12 bg-indigo-700 text-white rounded-xl hover:bg-indigo-600">
+                        <div class="m-4"> SELECT </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4">
+                <div class="border-2 rounded-lg">
+                    <div class="bg-indigo-800 font-bold text-white p-4 rounded-t-lg">Full acess </div>
+                    <div class="font-bold text-2xl p-4">15€</div>
+                    <div class="px-8 pb-2">
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum dolor.
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum.
+                        Lorem ipsum dolor.
+                        Lorem ipsum.
+                    </div>
+                    <div class="border-2 m-12 bg-indigo-700 text-white rounded-xl hover:bg-indigo-600">
+                        <div class="m-4"> SELECT </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+     
+    <nav class="bg-indigo-800" id="nav-bar">
+        <div class="">
+            <div class=" flex justify-around pt-4 pb-4">
+                <img class="w-22 h-5" src="https://i.postimg.cc/13DV6xYg/Untitled-1.png" id="header-img" alt="logo">
+                <div class="text-white text-sm">Copyright 2022, Sample DB B.A.</div>
+            </div>
+        </div>
+    </nav>
+    
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+</body>
+</html>
+
+
+
