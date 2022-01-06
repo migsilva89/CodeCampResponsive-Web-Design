@@ -39,44 +39,59 @@
         </div>
 
         <!-- NAVBAR DESKTOP  -->
-        <div class="sidebar bg-cyan-800 text-cyan-100 w-64 space-y-6 py-7 px-2 absolute inset-y-0 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
-            <nav id="navbar">
+        <div class="sidebar bg-cyan-800 text-cyan-100 w-64 space-y-6 py-7 px-2 left-0 transform -translate-x-full md:relative md:translate-x-0 transition duration-200 ease-in-out">
+            <nav id="navbar" class="">
                 <div class="flex items-center space-x-2 p-4 pl-8 text-white">
                     <header class="font-extrabold text-4xl">JS DOCS</header>
                 </div>
                 <ul class="p-4">
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Introduction">Introduction</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Hello_world">Hello world</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Variables">Variables</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Global_variables">Global variables</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Constants">Constants</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Data_types">Data types</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#if_else_statement">if else statement</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#while_statement">while statement</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Function_declarations">Function declarations</a></li>
-                    <li class="block py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Reference">Reference</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Introduction">Introduction</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#What_you_should_already_know">What you should already know</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Hello_world">Hello world</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Variables">Variables</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Global_variables">Global variables</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Constants">Constants</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Data_types">Data types</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#if_else_statement">if else statement</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#while_statement">while statement</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Function_declarations">Function declarations</a></li>
+                    <li class="py-2.5 px-4 hover:bg-cyan-700 hover:text-white rounded transition duration-200"><a class="nav-link" href="#Reference">Reference</a></li>
                 </ul>
             </nav>
         </div>
     
         <!-- MAIN CONTENT - usei flex1 parar separar o containter -->
-        <div class="p-10 flex-1 list-none">
+        <div class="p-10 flex-1 list-none p-16">
             <main id="main-doc">
         
                 <section class="main-section" id="Introduction">
                     <header class="font-extrabold text-4xl">Introduction</header>
-                    <p></p>
+                    <p>
+                        JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a
+                        host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to
+                        provide programmatic control over them.
+                    
+                        JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language
+                        elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of
+                        purposes by supplementing it with additional objects; for example:
+                    
+                        Client-side JavaScript extends the core language by supplying objects to control a browser and its Document Object
+                        Model (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond
+                        to user events such as mouse clicks, form input, and page navigation.
+                        Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server.
+                        For example, server-side extensions allow an application to communicate with a database, provide continuity of
+                        information from one invocation to another of the application, or perform file manipulations on a server.
+                    </p>
                     <p></p>
                     <li></li>
                     <code></code>
                 </section>
                 
                 <section class="main-section" id="What_you_should_already_know">
-                    <header>What you should already know</header>
+                    <header class="font-extrabold text-4xl">What you should already know</header>
                     <p></p>
                     <p></p>
                     <li></li>
@@ -84,7 +99,7 @@
                 </section>
                 
                 <section class="main-section" id="JavaScript_and_Java">
-                    <header>JavaScript and Java</header>
+                    <header class="font-extrabold text-4xl">JavaScript and Java</header>
                     <p></p>
                     <p></p>
                     <code></code>
@@ -92,7 +107,7 @@
                 </section>
                 
                 <section class="main-section" id="Hello_world">
-                    <header>Hello world</header>
+                    <header class="font-extrabold text-4xl">Hello world</header>
                     <p></p>
                     <p></p>
                     <code></code>
@@ -100,7 +115,7 @@
                 </section>
                 
                 <section class="main-section" id="Variables">
-                    <header>Variables</header>
+                    <header class="font-extrabold text-4xl">Variables</header>
                     <p></p>
                     <p></p>
                     <code></code>
@@ -108,7 +123,7 @@
                 </section>
                 
                 <section class="main-section" id="Declaring_variables">
-                    <header>Declaring variables</header>
+                    <header class="font-extrabold text-4xl">Declaring variables</header>
                     <p></p>
                     <p></p>
                     <code></code>
@@ -116,7 +131,7 @@
                 </section>
 
                 <section class="main-section" id="Variable_scope">
-                    <header>Variable scope</header>
+                    <header class="font-extrabold text-4xl">Variable scope</header>
                     <p></p>
                     <p></p>
                     <code></code>
@@ -124,7 +139,7 @@
                 </section>
 
                 <section class="main-section" id="Global_variables">
-                    <header>Global variables</header>
+                    <header class="font-extrabold text-4xl">Global variables</header>
                     <p></p>
                     <p></p>
                     <code></code>
@@ -132,7 +147,7 @@
                 </section>
 
                 <section class="main-section" id="Constants">
-                    <header>Constants</header>
+                    <header class="font-extrabold text-4xl">Constants</header>
                     <p></p>
                     <p></p>
                     <code></code>
@@ -140,7 +155,7 @@
                 </section>
 
                 <section class="main-section" id="Data_types">
-                    <header>Data types</header>
+                    <header class="font-extrabold text-4xl">Data types</header>
                     <p></p>
                     <p></p>
                     <code></code>
@@ -148,7 +163,7 @@
                 </section>
 
                 <section class="main-section" id="if_else_statement">
-                    <header>if else statement</header>
+                    <header class="font-extrabold text-4xl">if else statement</header>
                     <p></p>
                     <p></p>
                     <code></code>
@@ -156,7 +171,7 @@
                 </section>
 
                 <section class="main-section" id="while_statement">
-                    <header>while statement</header>
+                    <header class="font-extrabold text-4xl">while statement</header>
                     <p></p>
                     <p></p>
                     <code></code>
@@ -164,7 +179,7 @@
                 </section>
 
                 <section class="main-section" id="Function_declarations">
-                    <header>Function declarations</header>
+                    <header class="font-extrabold text-4xl">Function declarations</header>
                     <p></p>
                     <p></p>
                     <code></code>
@@ -172,7 +187,7 @@
                 </section>
 
                 <section class="main-section" id="Reference">
-                    <header>Reference</header>
+                    <header class="font-extrabold text-4xl">Reference</header>
                     <p></p>
                     <p></p>
                     <code></code>
