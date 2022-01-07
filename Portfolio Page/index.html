@@ -27,60 +27,110 @@
 
         header {
             background:url('http://test.ultralinx.co/wp-content/uploads/2020/03/1_florian-8gif.gif');}
+
+        /* nav {
+            position: fixed;
+            } */
     </style>
 </head>
 <body class="">
 
     <!-- NAVBAR -->
-    <nav id="navbar" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-black bg-transparent">
-        <ul class="nav-list flex gap-5">
-            <li>
-            <a href="#welcome-section">About</a>
-            </li>
-            <li>
-            <a href="#projects">Work</a>
-            </li>
-            <li>
-            <a href="#contact">Contact</a>
-            </li>
-        </ul>
+    <nav id="navbar" class="flex justify-center items-center">
+        <div class="fixed w-ful z-10 pt-16 flex justify-center items-center ">
+            <ul class="nav-list gap-10 flex text-lg text-gray-100">
+                <li class="hover:text-white hover:text-xl opacity-80 hover:opacity-100">
+                    <a href="#welcome-section">Home</a>
+                </li>
+                <li class=" hover:text-white hover:text-xl opacity-80  hover:opacity-100">
+                    <a href="#projects">About</a>
+                </li>
+                <li class=" hover:text-white hover:text-xl opacity-80 hover:opacity-100">
+                    <a href="#contact">Portfolio</a>
+                </li>
+                <li class=" hover:text-white hover:text-xl opacity-80 hover:opacity-100">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <header id="up" class="bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
-        <!-- Overlay Background + Center Control -->
-        <div class="h-screen bg-opacity-50 bg-black flex items-center justify-center" style="background:rgba(0,0,0,0.5);">
-          <div class="mx-2 text-center">
-            <h1 class="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl">Nikus e Palhaco</h1>
-            <h2 class="text-gray-200 font-extrabold text-3xl xs:text-4xl md:text-5xl leading-tight">by MIGSILVA89</h2>
-            <div class="inline-flex">
-              <button class="p-2 my-5 mx-2 bg-indigo-700 hover:bg-indigo-800 font-bold text-white rounded border-2 border-transparent hover:border-indigo-800 shadow-md transition duration-500 md:text-xl">Learn More</button>
-            </div>
-          </div>
-        </div>
-      </header>
-
-
-
-
-
     <!-- WELCOME SECTION -->
-    <section id="welcome-section">
-        <h1>Hey I am Mi</h1>
-        <p>a web developer</p>
+    <section id="welcome-section"> 
+        <!-- HEADER -->
+        <header id="up" class="bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
+            <!-- Overlay Background + Center Control -->
+            <div class="h-screen flex items-center justify-center" style="background:rgba(0,0,0,0.5);">
+                <div class="mx-2 text-center">
+                    <h1 class="text-gray-100 text-4xl font-bold md:text-4xl">Hello, <span class="text-purple-600 font-extrabold">I'm Migsilva89 &#129299; </span> <p>and I am a freelancer web developer.</p></h1>
+                    <div class="inline-flex pt-8">
+                        <button class="p-4 my-5 mx-2 bg-purple-800 hover:bg-purple-600 font-bold text-white rounded-xl shadow-md transition duration-300 md:text-xl">My Works</button>
+                    </div>
+                </div>
+            </div>
+        </header>
     </section>
+
+     <!-- ABOUT SECTION -->
+     <section id="about">
+
+         <!-- ABOUT -->
+        <div class="project-tile flex items-center justify-center">
+            <h1 class="pt-16 text-4xl font-bold">ABOUT</h1>
+        </div>
+        <div class="flex items-center justify-center pt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+        </div>
+        
+        <!-- CARDS -->
+        <div class="grid md:grid-cols-4 p-8 pt-16"">
+
+            <div class="grid md:grid-rows-2">
+                   <img src="https://www.howtogeek.com/wp-content/uploads/2019/12/GG-Banner.jpg?width=1198&trim=1,1&bg-color=000&pad=1,1" alt="">
+                <div class="text-center">FAST</div>
+            </div>
+
+            <div class="grid md:grid-rows-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-96" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+                </svg>
+                <div class="text-center">FAST</div>
+            </div>
+            
+            <div class="grid md:grid-rows-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-96" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+                </svg>
+                <div class="text-center">FAST</div>
+            </div>
+
+            <div class="grid md:grid-rows-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-96" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+                </svg>
+                <div class="text-center">FAST</div>
+            </div>
+        </div>
+
+        <a href=""></a>
+    </section>
+   
 
     <!-- PROJECT SECTION -->
     <section id="projects">
         <div class="project-tile"></div>
-        <a href="">dsad</a>
+        <a href=""></a>
     </section>
 
     <!-- PROFILE LINKS SECTION -->
     <section>
         <div>
-            <a href="https://github.com/freecodecamp" target="_blank" id="profile-link">Github</a>
+            <a href="https://github.com/freecodecamp" target="_blank" id="profile-link"></a>
         </div>
     </section>
+    
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
