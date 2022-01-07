@@ -4,9 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+    <style>
+
+        #batata {
+            width: 300px;
+        }
+        
+        @media (max-width: 0px) {
+            batata {
+                display:flex;
+            }
+        }
+
+        /* #welcome-section {
+            padding-top: 0px;
+            margin-top: 0px;
+            display: block;
+            height: 100vh;
+        } */
+
+        header {
+            background:url('http://test.ultralinx.co/wp-content/uploads/2020/03/1_florian-8gif.gif');}
+    </style>
 </head>
-<body>
-    
+<body class="">
+
+    <!-- NAVBAR -->
+    <nav id="navbar" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-black bg-transparent">
+        <ul class="nav-list flex gap-5">
+            <li>
+            <a href="#welcome-section">About</a>
+            </li>
+            <li>
+            <a href="#projects">Work</a>
+            </li>
+            <li>
+            <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header id="up" class="bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
+        <!-- Overlay Background + Center Control -->
+        <div class="h-screen bg-opacity-50 bg-black flex items-center justify-center" style="background:rgba(0,0,0,0.5);">
+          <div class="mx-2 text-center">
+            <h1 class="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl">Nikus e Palhaco</h1>
+            <h2 class="text-gray-200 font-extrabold text-3xl xs:text-4xl md:text-5xl leading-tight">by MIGSILVA89</h2>
+            <div class="inline-flex">
+              <button class="p-2 my-5 mx-2 bg-indigo-700 hover:bg-indigo-800 font-bold text-white rounded border-2 border-transparent hover:border-indigo-800 shadow-md transition duration-500 md:text-xl">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+
+
+
+    <!-- WELCOME SECTION -->
+    <section id="welcome-section">
+        <h1>Hey I am Mi</h1>
+        <p>a web developer</p>
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section id="projects">
+        <div class="project-tile"></div>
+        <a href="">dsad</a>
+    </section>
+
+    <!-- PROFILE LINKS SECTION -->
+    <section>
+        <div>
+            <a href="https://github.com/freecodecamp" target="_blank" id="profile-link">Github</a>
+        </div>
+    </section>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
