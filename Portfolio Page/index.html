@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
 
         #batata {
@@ -26,7 +27,8 @@
         } */
 
         header {
-            background:url('http://test.ultralinx.co/wp-content/uploads/2020/03/1_florian-8gif.gif');}
+            background:url('http://test.ultralinx.co/wp-content/uploads/2020/03/1_florian-8gif.gif');
+        }
 
         /* nav {
             position: fixed;
@@ -37,13 +39,13 @@
 
     <!-- NAVBAR -->
     <nav id="navbar" class="flex justify-center items-center ">
-        <div class="fixed w-full z-10 pt-16 flex justify-center items-center">
+        <div class="absolute w-full z-10 pt-16 flex justify-center items-center">
             <ul class="nav-list gap-10 flex text-lg text-gray-100">
                 <li class="hover:text-white hover:text-xl opacity-80 hover:opacity-100">
                     <a href="#welcome-section">Home</a>
                 </li>
                 <li class=" hover:text-white hover:text-xl opacity-80  hover:opacity-100">
-                    <a href="#projects">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li class=" hover:text-white hover:text-xl opacity-80 hover:opacity-100">
                     <a href="#projects">Portfolio</a>
@@ -62,9 +64,9 @@
             <!-- Overlay Background + Center Control -->
             <div class="h-screen flex items-center justify-center" style="background:rgba(0,0,0,0.5);">
                 <div class="mx-2 text-center">
-                    <h1 class="text-gray-100 text-4xl font-bold md:text-4xl">Hello, <span class="text-purple-600 font-extrabold">I'm Migsilva89 &#129299; </span> <p>and I am a freelancer web developer.</p></h1>
+                    <h1 data-aos="fade-right" data-aos-duration="1000" class="text-gray-100 text-4xl font-bold md:text-4xl">Hello, <span data-aos="fade-down-left" data-aos-duration="3000" class="text-purple-600 font-extrabold">I'm Migsilva89 &#129299; </span> <p>and I am a freelancer web developer.</p></h1>
                     <div class="inline-flex pt-8">
-                        <button class="p-4 my-5 mx-2 bg-purple-800 hover:bg-purple-600 font-bold text-white rounded-xl shadow-md transition duration-300 md:text-xl">My Works</button>
+                        <button data-aos="fade-left" data-aos-duration="1000" class="p-4 my-5 mx-2 bg-purple-800 hover:bg-purple-600 font-bold text-white rounded-xl shadow-md transition duration-300 md:text-xl">My Works</button>
                     </div>
                 </div>
             </div>
@@ -75,10 +77,10 @@
     <section id="about" class="">
 
          <!-- ABOUT -->
-        <div class="project-tile flex items-center justify-center">
+        <div data-aos="fade-down" data-aos-duration="1000" class="project-tile flex items-center justify-center">
             <h1 class="pt-16 text-4xl font-bold text-gray-900">ABOUT</h1>
         </div>
-        <div class="flex items-center justify-center pt-4">
+        <div data-aos="fade-down" data-aos-duration="1500" class="flex items-center justify-center pt-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
@@ -90,19 +92,19 @@
 
                 <div class="grid md:grid-rows-2">
                     <div class="flex items-center justify-center">
-                    <img src="https://iili.io/YU2Jpa.png" class="w-32" alt="">
+                        <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="200" src="https://iili.io/YU2Jpa.png" class="w-32" alt="">
                     </div>
-                    <div>
-                        <h1 class="text-center text-gray-700 font-extrabold text-2xl pt-4">FAST</h1>
+                    <div data-aos="fade-right" data-aos-duration="1000">
+                        <h1  class="text-center text-gray-700 font-extrabold text-2xl pt-4">FAST</h1>
                         <p class="text-center p-2 text-gray-700 px-4">Fast load times and lag free interaction, my highest priority.</p>
                     </div>
                 </div>
 
                 <div class="grid md:grid-rows-2">
                     <div class="flex items-center justify-center">
-                        <img src="https://iili.io/YU2ujf.png" class="w-32" alt="">
+                        <img data-aos="flip-left" data-aos-duration="2000" data-aos-delay="200"  src="https://iili.io/YU2ujf.png" class="w-32" alt="">
                     </div>
-                    <div>
+                    <div data-aos="fade-right" data-aos-duration="1000">
                         <h1 class="text-center text-gray-700 font-extrabold text-2xl pt-4">RESPONSIVE</h1>
                         <p class="text-center p-2 text-gray-700 px-4">My layouts will work on any device, big or mdall.</p>
                     </div>
@@ -110,9 +112,9 @@
                 
                 <div class="grid md:grid-rows-2">
                     <div class="flex items-center justify-center">
-                        <img src="https://iili.io/YU20ve.png" class="w-32" alt="">
+                        <img data-aos="flip-left" data-aos-duration="2000" data-aos-delay="200"  src="https://iili.io/YU20ve.png" class="w-32" alt="">
                     </div>
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
                         <h1 class="text-center text-gray-700 font-extrabold text-2xl pt-4">INTUITIVE</h1>
                         <p class="text-center p-2 text-gray-700 px-4">Strong preference for easy to use, intuitive UX/UI.</p>
                     </div>
@@ -120,9 +122,9 @@
 
                 <div class="grid md:grid-rows-2">
                     <div class="flex items-center justify-center">
-                        <img src="https://iili.io/YU2sat.png" class="w-32" alt="">
+                        <img data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300"  src="https://iili.io/YU2sat.png" class="w-32" alt="">
                     </div>
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
                         <h1 class="text-center text-gray-700 font-extrabold text-2xl pt-4">DYNAMIC</h1>
                         <p class="text-center p-2 text-gray-700 px-4">Websites don't have to be static, I love making pages come to life. </p>
                     </div>
@@ -142,9 +144,9 @@
                 <!-- LEFT COL -->
                 <div>
                     <div class="flex items-center justify-center">
-                        <img src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="w-32 rounded-xl shadow-lg shadow-indigo-500/50" alt="">
+                        <img data-aos="flip-right" data-aos-duration="1000" src="https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="w-32 rounded-xl shadow-lg shadow-indigo-500/50" alt="">
                     </div>
-                    <div>
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                         <h1 class="text-center text-gray-700 font-extrabold text-2xl pt-4">Who am I?</h1>
                         <p class="text-center p-2 text-gray-700 px-20">I'm a freelancer Front-End Developer from Porto Portugal.
                             I love to do animations and creating intuitive, dynamic user experiences.
@@ -154,7 +156,7 @@
 
                 <!-- RIGHT COL -->
                 <div class="grid p-8 grid-rows-3 md:grid-cols-2 gap-2">
-                    <div class="flex items-center justify-center">
+                    <div class="flex items-center justify-center" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                         <span class="text-center text-gray-700 pr-4">HTML</span>
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current text-purple-700">
                             <path
@@ -182,7 +184,7 @@
                             </path>
                         </svg>
                     </div>
-                    <div class="flex items-center justify-center">
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300" class="flex items-center justify-center">
                         <span class="text-center text-gray-700 pr-4">CSS</span>
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current text-purple-700">
                             <path
@@ -210,7 +212,7 @@
                             </path>
                         </svg>
                     </div>
-                    <div class="flex items-center justify-center">
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400" class="flex items-center justify-center">
                         <span class="text-center text-gray-700 pr-4">Tailwind CSS</span>
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current text-purple-700">
                             <path
@@ -238,7 +240,7 @@
                             </path>
                         </svg>
                     </div>
-                    <div class="flex items-center justify-center">
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" class="flex items-center justify-center">
                         <span class="text-center text-gray-700 pr-4">Bootstrap</span>
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current text-purple-700">
                             <path
@@ -266,7 +268,7 @@
                             </path>
                         </svg>
                     </div>
-                    <div class="flex items-center justify-center">
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" class="flex items-center justify-center">
                         <span class="text-center text-gray-700 pr-4">Javascript</span>
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current text-purple-700">
                             <path
@@ -295,7 +297,7 @@
                             </path>
                         </svg>
                     </div>
-                    <div class="flex items-center justify-center">
+                    <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600" class="flex items-center justify-center">
                         <span class="text-center text-gray-700 pr-4">Vue.js</span>
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 fill-current text-purple-700">
                             <path
@@ -336,10 +338,10 @@
             <div class=" mx-auto px-4 md:px-6 py-12 max-w-screen-2xl">
 
                 <div class="text-center pb-12">
-                    <h1 class="font-bold text-3xl md:text-5xl text-gray-900 font-heading text-white">
+                    <h1 data-aos="fade-down" data-aos-duration="1000" class="font-bold text-3xl md:text-5xl text-gray-900 font-heading text-white">
                         Projects            
                     </h1>
-                    <div class="flex items-center justify-center pt-4">
+                    <div data-aos="fade-down" data-aos-duration="1500" class="flex items-center justify-center pt-4">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                         </svg>
@@ -348,7 +350,7 @@
                 
                 <div class="md:mx-8 sm:mx-16 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-12">
                     <!--First card-->
-                    <div class="md:p-8 p-2  h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="md:p-8 p-2  h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
 
                         <!--Banner image-->
                         <img class="rounded-lg w-full h-44 shadow-md" src="https://raw.githubusercontent.com/migsilva89/intro-form/master/public/imagem2.png
@@ -362,7 +364,7 @@
                     </div>
 
                     <!--2nd card-->
-                    <div class="md:p-8 p-2  h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="md:p-8 p-2  h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
 
                         <!--Banner image-->
                         <img class="rounded-lg w-full h-44 shadow-md" src="https://iili.io/YUQyfs.png
@@ -376,7 +378,7 @@
                     </div>
                     
                     <!--3rd card-->
-                    <div class="md:p-8 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"  class="md:p-8 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
 
                         <!--Banner image-->
                         <img class="rounded-lg w-full h-44 shadow-md" src="https://raw.githubusercontent.com/migsilva89/stats-preview-card-component-main/master/images/screenshot.png
@@ -390,7 +392,7 @@
                     </div>
 
                     <!--4th card-->
-                    <div class="md:p-8 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="md:p-8 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
 
                         <!--Banner image-->
                         <img class="rounded-lg w-full h-44 shadow-md" src="https://iili.io/YUm8P9.png
@@ -404,7 +406,7 @@
                     </div>
                    
                     <!--5th card-->
-                    <div class="md:p-8 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="md:p-8 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
 
                         <!--Banner image-->
                         <img class="rounded-lg w-full h-44 shadow-md" src="https://raw.githubusercontent.com/migsilva89/espaco-europa-web-course/master/screen.png
@@ -418,7 +420,7 @@
                     </div>
 
                     <!--6th card-->
-                    <div class="md:p-8 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="md:p-8 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
 
                         <!--Banner image-->
                         <img class="rounded-lg w-full h-44 shadow-md" src="https://iili.io/YUy6QV.png
@@ -437,15 +439,26 @@
         <a href=""></a>
     </section>
 
-    <!-- PROFILE LINKS SECTION -->
+    <!-- WEBLINKS-->
     <section>
-        <div>
-            <a href="https://github.com/freecodecamp" target="_blank" id="profile-link"></a>
+        <div class="bg-gray-200 pt-16 pb-16 flex justify-center items-center">
+            <a data-aos="fade-right" data-aos-duration="1000" class="text-center p-4 hover:text-xl hover:text-black" href="https://github.com/migsilva89" target="_blank" id="profile-link">
+               <svg style="color: #411b4d; fill: currentColor;" xmlns="http://www.w3.org/2000/svg" height="80" width="100"  viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+               <p class="p-4 text-gray-700 px-4">Github</p>
+            </a>
+            <a data-aos="fade-left" data-aos-duration="1000" class="text-center p-4 hover:text-xl hover:text-black" href="https://github.com/migsilva89" target="_blank" id="profile-link">
+                <svg xmlns="http://www.w3.org/2000/svg"  height="80" width="100" viewBox="0 0 256 256"><g fill="none"><path d="M0 18.338C0 8.216 8.474 0 18.92 0h218.16C247.53 0 256 8.216 256 18.338v219.327C256 247.79 247.53 256 237.08 256H18.92C8.475 256 0 247.791 0 237.668V18.335z" fill="#411b4d"/><path d="M77.796 214.238V98.986H39.488v115.252H77.8zM58.65 83.253c13.356 0 21.671-8.85 21.671-19.91-.25-11.312-8.315-19.915-21.417-19.915-13.111 0-21.674 8.603-21.674 19.914 0 11.06 8.312 19.91 21.169 19.91h.248zM99 214.238h38.305v-64.355c0-3.44.25-6.889 1.262-9.346 2.768-6.885 9.071-14.012 19.656-14.012 13.858 0 19.405 10.568 19.405 26.063v61.65h38.304v-66.082c0-35.399-18.896-51.872-44.099-51.872-20.663 0-29.738 11.549-34.78 19.415h.255V98.99H99.002c.5 10.812-.003 115.252-.003 115.252z" fill="#fff"/></g></svg>
+                <p class="p-4 text-gray-700 px-4">Linkedin</p>
+            </a>
         </div>
     </section>
     
 
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
