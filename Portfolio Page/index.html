@@ -8,8 +8,6 @@
     <title>Document</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-
-       
         /* #welcome-section {
             padding-top: 0px;
             margin-top: 0px;
@@ -21,6 +19,10 @@
             background:url('http://test.ultralinx.co/wp-content/uploads/2020/03/1_florian-8gif.gif');
         }
 
+     /* ul {
+         color: red !important;
+     } */
+
         /* nav {
             position: fixed;
             } */
@@ -29,9 +31,9 @@
 <body class="">
 
     <!-- NAVBAR -->
-    <nav id="navbar" class="flex justify-center items-center ">
-        <div class="absolute w-full z-10 pt-16 flex justify-center items-center">
-            <ul class="nav-list gap-10 flex text-lg text-gray-100">
+    <nav class="flex justify-center items-center ">
+        <div id="navbar" class="pt-16 fixed w-full z-10 flex justify-center items-center">
+            <ul id="ul1" class="nav-list gap-10 flex text-lg text-gray-100">
                 <li class="hover:text-white hover:text-xl opacity-80 hover:opacity-100">
                     <a href="#welcome-section">Home</a>
                 </li>
@@ -63,12 +65,11 @@
             </div>
         </header>
     </section>
-
      <!-- ABOUT SECTION -->
     <section id="about" class="">
 
          <!-- ABOUT -->
-        <div data-aos="fade-down" data-aos-duration="1000" class="project-tile flex items-center justify-center">
+        <div data-aos="fade-down" data-aos-duration="1000" class="flex items-center justify-center">
             <h1 class="pt-16 text-4xl font-bold text-gray-900">ABOUT</h1>
         </div>
         <div data-aos="fade-down" data-aos-duration="1500" class="flex items-center justify-center pt-4">
@@ -443,12 +444,44 @@
             </a>
         </div>
     </section>
-    
+
 
 <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
+
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+        if (document.documentElement.scrollTop > 450 && document.documentElement.scrollTop < 700 ) {
+            document.getElementById("ul1").style.visibility = "hidden";
+        } 
+        else { 
+            document.getElementById("ul1").style.visibility = "visible";
+        } 
+        
+        if (document.documentElement.scrollTop > 1210) {
+            var element = document.getElementById("ul1");
+            element.classList.add("bg-black", "p-2", "w-full",);
+            
+        } else { 
+            var element = document.getElementById("ul1");
+            element.classList.remove("bg-black", "p-2", "w-full");
+        }
+
+        if (document.documentElement.scrollTop > 1210) {
+            var nav = document.getElementById("navbar");
+            nav.classList.remove("pt-16")
+            nav.classList.add("pt-10",)
+        } else {
+            var nav = document.getElementById("navbar");
+            nav.classList.remove("pt-10")
+            nav.classList.add("pt-16")
+        }
+    }
+
+    
   </script>
 </body>
 
