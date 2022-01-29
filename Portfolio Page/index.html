@@ -384,7 +384,7 @@
                     </a>
 
                     <!--4th card-->
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="md:p-4 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
+                    <a href="https://tech-doc-page-inky.vercel.app/" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="md:p-4 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
 
                         <!--Banner image-->
                         <img class="rounded-lg w-full h-44 shadow-md" src="https://iili.io/YUm8P9.png
@@ -395,10 +395,10 @@
                         </h1>
                         <!--Tag-->
                         <p class="text-indigo-500 font-semibold text-base mt-2">HTML, Tailwind CSS, JavaScript</p>
-                    </div>
+                    </a>
                    
                     <!--5th card-->
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="md:p-4 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
+                    <a href="https://vercel.com/migsilva89/page-product" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="md:p-4 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
 
                         <!--Banner image-->
                         <img class="rounded-lg w-full h-44 shadow-md" src="https://raw.githubusercontent.com/migsilva89/espaco-europa-web-course/master/screen.png
@@ -409,10 +409,10 @@
                         </h1>
                         <!--Tag-->
                         <p class="text-indigo-500 font-semibold text-base mt-2">HTML, Tailwind CSS, PHP</p>
-                    </div>
+                    </a>
 
                     <!--6th card-->
-                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="md:p-4 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
+                    <a href="" onclick=soon() id="todo" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="md:p-4 p-2 h-auto bg-white rounded-md  shadow-md shadow-indigo-500/50">
 
                         <!--Banner image-->
                         <img class="rounded-lg w-full h-44 shadow-md" src="https://iili.io/YUy6QV.png
@@ -423,7 +423,7 @@
                         </h1>
                         <!--Tag-->
                         <p class="text-indigo-500 font-semibold text-base mt-2">HTML, Tailwind CSS, JavaScript, PHP</p>
-                    </div>
+                    </a>
 
                 </div>
             </div>
@@ -448,41 +448,7 @@
 
 <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-
-    window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-        if (document.documentElement.scrollTop > 450 && document.documentElement.scrollTop < 700 ) {
-            document.getElementById("ul1").style.visibility = "hidden";
-        } 
-        else { 
-            document.getElementById("ul1").style.visibility = "visible";
-        } 
-        
-        if (document.documentElement.scrollTop > 1210) {
-            var element = document.getElementById("ul1");
-            element.classList.add("bg-black", "p-2", "w-full",);
-            
-        } else { 
-            var element = document.getElementById("ul1");
-            element.classList.remove("bg-black", "p-2", "w-full");
-        }
-
-        if (document.documentElement.scrollTop > 1210) {
-            var nav = document.getElementById("navbar");
-            nav.classList.remove("pt-16")
-            nav.classList.add("pt-10",)
-        } else {
-            var nav = document.getElementById("navbar");
-            nav.classList.remove("pt-10")
-            nav.classList.add("pt-16")
-        }
-    }
-
-    
-  </script>
+<script src="index.js"></script>
 </body>
 
 </html>
