@@ -12,20 +12,20 @@ AOS.init();
         
         if (document.documentElement.scrollTop > 1210) {
             var element = document.getElementById("ul1");
-            element.classList.add("bg-black", "p-2", "w-full",);
+            element.classList.add("p-2", );
             
         } else { 
             var element = document.getElementById("ul1");
-            element.classList.remove("bg-black", "p-2", "w-full");
+            element.classList.remove("p-2",);
         }
 
-        if (document.documentElement.scrollTop > 1210) {
+        if (document.documentElement.scrollTop > 1150) {
             var nav = document.getElementById("navbar");
             nav.classList.remove("pt-16")
-            nav.classList.add("pt-10",)
+            nav.classList.add("pt-10","bg-black")
         } else {
             var nav = document.getElementById("navbar");
-            nav.classList.remove("pt-10")
+            nav.classList.remove("pt-10","bg-black")
             nav.classList.add("pt-16")
         }
     }
